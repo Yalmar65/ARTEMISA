@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARTEMISA</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style:none;
+            text-decoration:none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        [class*='col-']{
+            float:left;
+            width: 100%;
+        }
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+        header{
+            position: sticky;
+            background-color: white;
+        }
+        a>img{
+            width: 3.5%;
+            padding: 25px 10px;
+            float: right;
+            position: relative;
+            top: calc (150px - 50%);
+            transform: translate3d();
+        }
+        .logo{
+            margin-left: 35%;
+            width: 25%;
+        }
+        div{
+            height: 100vh;
+            position: relative;
+        }
+        div>img{
+            height: auto;
+            width: 100%;
+        }
+        p{
+            text-align: center;
+            position: absolute;
+            top: 58%;
+            left: calc(50% - 50vh);
+            color: white;
+            font-size: 1.5rem;
+        }
+        h1{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            color: white;
+        }
+        .hombreen, .mujeren, .niñosen, .ofertasen, .accesoriosen{
+            text-decoration: none;
+            text-align: center;
+            position: absolute;
+            top: 70%;
+            left: calc(50% - 5vh);
+            color: white;
+            padding: 10px 20px;
+            border: 1px solid white;
+        }
+        .hombreen:hover, .mujeren:hover, .niñosen:hover, .ofertasen:hover, .accesoriosen:hover{
+            background-color: #ffffffd0;
+            border-color: #ffffffd0;
+            color: #200e01;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <img src="img/LOGO.png" class="logo">
+            <a href="#"><img src="img/lupa.png"></a>
+            <a href="#"><img src="img/estrella.png"></a>
+            <a href="#"><img src="img/usuario.png"></a>
+    </header>
+    <div>
+        <div class="hombre">
+            <img src="img/men/HOMBRE.png" >
+            <h1 class="col-12">ROPA PARA HOMBRE</h1>
+            <p class="col-6">Coleccion Verano 2021</p>
+            <a href="#" class="hombreen">Ver</a>
+        </div>
+        <div class="mujer">
+            <img src="img/men/MUJER.png" >
+            <h1 class="col-12">ROPA PARA MUJER</h1>
+            <p class="col-6">Coleccion Verano 2021</p>
+            <a href="#" class="mujeren">Ver</a>
+        </div>
+        <div class="niños">
+            <img src="img/men/NIÑOS.png" >
+            <h1 class="col-12">ROPA PARA NIÑOS</h1>
+            <p class="col-6">Coleccion Verano 2021</p>
+            <a href="#" class="niñosen">Ver</a>
+        </div>
+        <div class="accesorios">
+            <img src="img/men/ACCESORIOS.png" >
+            <h1 class="col-12">ACCESORIOS</h1>
+            <p class="col-6">Coleccion Verano 2021</p>
+            <a href="#" class="accesoriosen">Ver</a>
+        </div>
+        <div class="ofertas">
+            <img src="img/men/OFERTAS.png" >
+            <h1 class="col-12">OFERTAS</h1>
+            <p class="col-6">Coleccion Verano 2021</p>
+            <a href="#" class="ofertasen">Ver</a>
+        </div>
+    </div>
+</body>
+</html>

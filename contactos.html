@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+         *{
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+          font-family: 'Fjalla One', sans-serif;
+          font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-color: #aca67f;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+        }
+        [class*='col-']{
+          float:left;
+          padding: 15px;      
+        }
+        .row::after{
+          content: '';
+          display: table;
+          clear: both;
+        }
+        a>i{
+            width: 4%;
+            padding: 25px 15px;
+            float: right;
+            position: relative;
+            top: calc (150px - 50%);
+            color: #742933;
+        } 
+        .logo{
+            margin-left: 30%;
+            width: 30%;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 8px 0px;
+            margin: 0px;
+            margin-bottom: 20px;
+            z-index: 2;
+            box-shadow: 0px 0px 20px black;
+        }
+        nav{
+            padding: 5px;
+        }
+        /*celulares*/
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}  
+        .container{
+            height: 120vh;
+            max-width: 90vw;
+          }
+       
+        /*tablet*/
+        @media only screen and (min-width:432px){
+          .col-m-1{width: 8.33%;}
+          .col-m-2{width: 16.66%;}
+          .col-m-3{width: 25%;}
+          .col-m-4{width: 33.33%;}
+          .col-m-5{width: 41.66%;}
+          .col-m-6{width: 50%;}
+          .col-m-7{width: 58.33%;}
+          .col-m-8{width: 66.66%;}
+          .col-m-9{width: 75%;}
+          .col-m-10{width: 83.33%;}
+          .col-m-11{width: 91.66%;}
+          .col-m-12{width: 100%;}  
+          .container{
+            height: 90vh;
+            max-width: 90vw;
+          }
+          header{
+              padding-right: 5px ;
+          }
+          
+        }
+        /*pc*/
+        @media only screen and (min-width:770px){
+          .col-g-1{width: 8.33%;}
+          .col-g-2{width: 16.66%;}
+          .col-g-3{width: 25%;}
+          .col-g-4{width: 33.33%;}
+          .col-g-5{width: 41.66%;}
+          .col-g-6{width: 50%;}
+          .col-g-7{width: 58.33%;}
+          .col-g-8{width: 66.66%;}
+          .col-g-9{width: 75%;}
+          .col-g-10{width: 83.33%;}
+          .col-g-11{width: 91.66%;}
+          .col-g-12{width: 100%;} 
+          .container{
+            height: 600px;
+            max-width: 900px;
+          }
+          .info{
+            height: 600px;
+          }
+        }
+
+        h1{
+            text-align: center;
+            font-size: 3em;
+            color: black;
+        }
+        h1 span{
+            color:#742933;
+        }
+        .container{ 
+            padding:0;
+            background-color: #222222;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        }
+        input, textarea{
+            width: 100%;
+        }
+        input[type=text],input[type=email], textarea{
+            background-color: transparent;
+            border:none;
+            outline:none;
+            color:white;
+            border-bottom: 2px solid #742933;
+            padding:10px 10px;
+            font-size: 1.3em;
+        }
+        input[type=submit] {
+            background-color:#742933 ;
+            color:white;
+            padding:10px 10px;
+            text-transform: uppercase;
+            border:none;
+            outline: none;
+            cursor:pointer;
+
+        }
+        input[type=submit]:hover{
+            background-color:#804d53 ;
+            letter-spacing: 3px;
+            transition: 1s;
+        }
+        .info{
+            background-color: black;
+           
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/LOGO.png" class="logo">
+            <a href="#"><i class="far fa-star "></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="contactos.html"><i class="far fa-user"></i></a>
+            <a href="index.html"><i class="fas fa-home"></i></a>
+        </nav>
+    </header>
+        <h1>Contacta<span>nos</span></h1>
+        <div class="container">
+            <div class="col-g-8 col-m-12">
+                <h2>Contactanos</h2>
+                <div class="col-g-6 col-m-6 col-12">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="col-g-6 col-m-6 col-12">
+                    <label for="mail">Correo Electrónico</label>
+                    <input type="email" id="mail" name="mail">
+                </div>
+                <div class="col-g-6 col-m-6 col-12">
+                    <label for="phone">Número de Teléfono</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="col-g-6 col-m-6 col-12">
+                    <label for="affair">Asunto de consulta</label>
+                    <input type="text" id="affair" name="affair">
+                </div>
+                <div class="col-g-12 col-m-12 col-12">
+                    <label for="message">Déjanos un comentario: </label>
+                    <textarea id="message" name="message" rows=5></textarea>
+                </div>
+                <div class="col-g-12 col-m-12 col-12">
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+            <div class="col-g-4 col-m-12 col-12 info">
+            <h3>Encuéntranos: </h3><br>
+            <p><i class="fas fa-map-marker-alt"></i>Co. Brisa del Valle</p>
+            <p><i class="fas fa-phone"></i> (+504) 2276-0024</p>
+            <p><i class="fas fa-envelope-open-text"></i> artemisa@artemisamoda.com</p>
+            <p><i class="fab fa-instagram"> </i> Artemisa_Moda</p>
+            <p><i class="fab fa-facebook"></i> Artemisa Moda</p>
+            <p><i class="fab fa-youtube"></i> Artemisa Moda HN</p>
+            <p><i class="fab fa-twitter"></i> @Artemisa</p>
+            <p></p>
+            <p><a href="index.html" style="text-decoration: none; color: white;">Artemisa.com</a></p><br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.5620522858176!2d-87.64134118564199!3d14.452384384567372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f65858cd98a29e5%3A0x913b590644b51db3!2sMall%20Premier!5e0!3m2!1ses-419!2shn!4v1623293954026!5m2!1ses-419!2shn" width=100% height=auto style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+</body>
+</html>

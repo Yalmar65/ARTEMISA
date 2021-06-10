@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d48c20e373.js" crossorigin="anonymous"></script>
+    <title>Pago</title>
+    <style>
+        *{
+            font-family: 'Fjalla One', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration:none;
+        }
+        body{
+            background-color: #fdf3e4;
+        }
+        a>i{
+            font-size: 1.3em;
+            padding-right: 15px;
+            padding-top:10px ;
+            float: right;
+            position: relative;
+            top: calc (150px - 50%);
+            color: #742933;
+        } 
+        .logo{
+            margin-left: 30%;
+            width: 30%;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 0px;
+            margin: 0px;
+            margin-bottom: 20px;
+            z-index: 2;
+        }
+        nav{
+            padding: 10px;
+        }
+        
+        .formulario{
+            background-color: #fdf3e4;
+            text-align: center;
+            padding:0% 1%;
+            position: relative;
+            color: #583013;
+            margin: 3% 5%;
+            z-index: 1;
+            padding: 2%;
+            border: 2px solid #583013;
+        }
+        h1{
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        img{
+            width: 60px;
+            padding-left: 5px;
+        }
+        input[type = text], input[type = email], input[type = password]{
+            border: 1px solid #74293300;
+            color: rgb(197, 193, 193);
+            font-size: 1rem;
+            background-color: #74293300;
+            border-bottom: 1px solid black;
+            outline: none;
+            width: 80%;
+            padding: 0.5%;
+        }
+        input[type = text]:focus, input[type = email]:focus, input[type = password]:focus{
+            background-color: rgba(255, 255, 255, 0.534);
+            color: #492003;
+        }
+        .formulario label{
+            font-size: 0.8rem;
+            text-align: center;
+            padding-top: 20px;
+        }
+        input[type=submit]{
+            background-color: rgba(0, 0, 0, 0);
+            color: #492003;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            border: 1px solid #492003;
+            padding: 5px 10px;
+        }
+        footer nav a img {
+            width: 3.5%;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            float: right;
+            position: relative;
+            top: calc (150px - 50%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/LOGO.png" class="logo col-9">
+            <a href="contactos.html"><i class="far fa-user"></i></a>
+            <a href="index.html"><i class="fas fa-home"></i></a>
+        </nav>
+    </header>
+    <div class="overlay"></div>
+    <div class="formulario">
+        <form>
+            <label><h1>PAGO</h1></label>
+            <input type="text" name="nombre" placeholder="Nombre"><br>
+            <input type="text" name="apellidos" placeholder="Apellido"><br>
+            <input type="email" name="email" placeholder="usuario@dominio.com"><br>
+            <input type="text" name="Télefono" placeholder="Número de Télefono"><br>
+            <label><h4>Configura tu tarjeta de crédito o débito.</h4></label>
+            <img src="img/formulario/visa.png"><img src="img/formulario/paypal.png"><img src="img/formulario/american-express.png"><img src="img/formulario/discover.png"><br>
+            <input type="text" name="tarjeta" placeholder="Número de tarjeta"><br>
+            <input type="text" name="fechadenacimiento" placeholder="Fecha de Nacimiento MM/AA"><br>
+            <input type="password" name="Códigodeseguridad" placeholder="Código de seguridad(CVV)"><br><br><br>
+            <label>Los pagos se procesarán internacionalmente. Es posible que se apliquen comisiones bancarias adicionales.<br>Recuerda que puedes cancelar tu compra y el envío en cualquier momento, confirma tu compar aqui: </label><br>
+            <input type="submit" value="COMPRAR">
+        </form>
+    </div>
+    <footer style="background-color: #7e5b43; position: absolute; width: 100%; padding: 10px; color: #492003;">
+        <h4>Idioma: Español(Honduras)</h4>
+        <h5><img src="img/footer/telefono.png" style="width: 20px; float:left; padding-right: 3px;"> +504 9988-7766</h5>
+        <h5><img src="img/footer/email.png" style="width: 20px; float:left; padding-right: 3px;"> atencionalcliente@artemismoda.com</h5>
+        <nav>
+            <a href="#"><img src="img/footer/logo-de-facebook.png"></a>
+            <a href="#"><img src="img/footer/instagram.png"></a>
+            <a href="#"><img src="img/footer/gorjeo.png"></a>
+            <a href="#"><img src="img/footer/linkedin.png"></a>
+            <a href="#"><img src="img/footer/youtube.png"></a>
+        </nav>
+    </footer>
+</body>
+</html>

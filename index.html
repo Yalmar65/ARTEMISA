@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>ARTEMISA</title>
+    <style>
+        *{
+            font-family: 'Fjalla One', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style:none;
+            text-decoration:none;
+        }
+        body{
+            background-color: black;
+        }
+        [class*='col-']{
+            float:left;
+            width: 100%;
+        }
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+        header{
+            position: sticky;
+            background-color: white;
+            top: 0;
+            z-index: 2;
+        }
+        a>img{
+            width: 40px;
+            padding: 25px 10px;
+            float: right;
+            position: relative;
+            top: calc (150px - 50%);
+        }
+        .logo{
+            margin-left: 35%;
+            width: 25%;
+        }
+        
+        div>video{
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 100%;
+        }
+        .container{
+            margin-bottom: 0%;
+            position: relative;
+            z-index: 1;
+        }
+        .tex{
+            position: absolute;
+            Top:40%;
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            z-index: 2;
+        }
+        .hombreen, .mujeren, .niñosen, .ofertasen, .accesoriosen{
+            font-size: 1.5rem;
+            padding: 10px 25px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+        }
+        .hombreen:hover, .mujeren:hover, .niñosen:hover, .ofertasen:hover, .accesoriosen:hover{
+            background-color: rgba(255, 255, 255, 0.719);
+            border-color: rgba(255, 255, 255, 0.719);
+            color: rgb(66, 25, 13);
+            transition: 0.5s;
+        }
+        footer nav a img {
+            width: 3%;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            float: right;
+            position: relative;
+            top: calc (150px - 50%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <img src="img/LOGO.png" class="logo">
+            <a href="#"><img src="img/lupa.png"></a>
+            <a href="#"><img src="img/estrella.png"></a>
+            <a href="contactos.html"><img src="img/usuario.png"></a>
+            <a href="#arriba"><img src="img/arriba (1).png"></a>
+    </header>
+    <div id="arriba">
+        <div class="container">
+            <div class="tex">
+                <h1>ROPA PARA HOMBRE</h1><br>
+                <p>Coleccion Verano 2021</p><br>
+                <a href="hombre.html" class="hombreen">Ver</a>
+            </div>
+            <video src="video/hombre.mp4" loop autoplay muted>
+        </div>
+        <div class="container">
+            <div class="tex">
+                <h1>ROPA PARA MUJER</h1><br>
+                <p>Coleccion Verano 2021</p><br>
+                <a href="mujer.html" class="mujeren">Ver</a>
+            </div>
+            <video src="video/MUJER.mp4" loop autoplay muted>
+        </div>
+        <div class="container">
+            <div class="tex">
+                <h1>ROPA PARA NIÑOS</h1><br>
+                <p>Coleccion Verano 2021</p><br>
+                <a href="Niño.html" class="niñosen">Ver</a>
+            </div>
+            <video src="video/NIÑO.mp4" loop autoplay muted>
+            
+        </div>
+        <div class="container">
+            <div class="tex">
+                <h1>ACCESORIOS</h1><br>
+                <p>Coleccion Verano 2021</p><br>
+                <a href="accesorio.html" class="accesoriosen">Ver</a>
+            </div>
+            <video src="video/ACCESORIOS.mp4" loop autoplay muted>
+            
+        </div>
+        <div class="container">
+            <div class="tex">
+                <h1>OFERTAS</h1><br>
+                <p>Coleccion Verano 2021</p><br>
+                <a href="ofertas.html" class="ofertasen">Ver</a>
+            </div>
+            <video src="video/OFERTAS.mp4" loop autoplay muted> 
+        </div>
+    </div>
+    <footer style="background-color: #f5dab1; position: absolute; width: 100%; padding: 10px; color: rgb(90, 82, 82); border-bottom: 1px solid rgb(197, 197, 197);">
+        <h4>Idioma: Español(Honduras)</h4>
+        <h5><img src="img/footer/telefono.png" style="width: 20px; float:left; padding-right: 3px;"> +504 9988-7766</h5>
+        <h5><img src="img/footer/email.png" style="width: 20px; float:left; padding-right: 3px;"> atencionalcliente@artemismoda.com</h5>
+        <nav>
+            <a href="#"><img src="img/footer/logo-de-facebook.png"></a>
+            <a href="#"><img src="img/footer/instagram.png"></a>
+            <a href="#"><img src="img/footer/gorjeo.png"></a>
+            <a href="#"><img src="img/footer/linkedin.png"></a>
+            <a href="#"><img src="img/footer/youtube.png"></a>
+        </nav>
+    </footer>
+</body>
+</html>

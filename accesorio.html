@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d48c20e373.js" crossorigin="anonymous"></script>
+    <title>ACCESORIOS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Fjalla One', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+        [class*='col-']{
+            float: left;
+            width: 100%;
+        }
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}  
+        
+        a>i{
+            width: 4%;
+            padding: 25px 15px;
+            float: right;
+            position: relative;
+            top: calc (150px - 50%);
+            color: #742933;
+        } 
+        .logo{
+            margin-left: 30%;
+            width: 30%;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 0px;
+            margin: 0px;
+            margin-bottom: 20px;
+            z-index: 2;
+        }
+        nav{
+            padding: 10px;
+        }
+        .barra{
+            background-color: #742933;
+            padding: 10px 20px;
+            display: none;/*Poner none*/
+            text-align: center;
+        }
+        .barra a{
+            padding:5px 10px;
+            color: white;
+            margin-left: 4%;
+        }
+        .desplegable{
+            background-color: #742933;
+            display: block;
+            padding: 5px;
+            padding-left: 15px;
+        }
+        .menu > li {
+            float:left;
+            }
+             
+        .menu li a {
+            background: #742933;
+            color:#FFF;
+            display:block;
+            border:1px solid;
+            padding:5px 12px;
+        } 
+        .menu li a:hover {
+            border: 2px solid #f5dab1;
+        }
+        .menu li ul {
+            display:none;
+            position:absolute;
+        }
+        .menu li:hover > ul {
+            display:block;
+        }
+        .menu li ul li {
+            position:relative;
+        }
+        .menu li ul li ul {
+            right:-140px;
+            top:0;
+        }
+        span{
+            padding: 10px 5px;
+            font-size: 1.5em;
+            color: white;
+        }
+        .acce img{
+            width: 100%;
+            height: auto;
+        }
+        .acce{
+            padding: 20px 15px;
+            height: auto;
+            border-bottom: 1px solid black;
+        }
+        .row{
+            margin: 0px;
+            padding: 20px;
+        }
+        p{
+            color: DarkOliveGreen;
+        }
+        .esp h1{
+            margin-top: 20px;
+            padding: 15 15px 0px 15px;
+            text-align: center;
+            font-size: 1.8em;
+            letter-spacing: 8px;
+        }
+        .esp{
+            text-align: center;
+            margin-left: 40px;
+            margin-right: 40px;
+            border-bottom: 5px dotted black;
+        }
+        @media only screen and (min-width:432px){
+            .col-m-1{width: 8.33%;}
+            .col-m-2{width: 16.66%;}
+            .col-m-3{width: 25%;}
+            .col-m-4{width: 33.33%;}
+            .col-m-5{width: 41.66%;}
+            .col-m-6{width: 50%;}
+            .col-m-7{width: 58.33%;}
+            .col-m-8{width: 66.66%;}
+            .col-m-9{width: 75%;}
+            .col-m-10{width: 83.33%;}
+            .col-m-11{width: 91.66%;}
+            .col-m-12{width: 100%;}
+
+            .acce img{
+                width: 100%;
+                height: 350px;
+            }
+            .acce{
+                padding: 15px 15px;
+                height: 490px;
+                border-bottom: 1px solid black;
+                padding-top: 40px;
+            }
+            p{
+                color: DarkOliveGreen;
+            }
+            .esp h1{
+                font-size: 2em;
+                letter-spacing: 10px;
+            }
+            .esp{
+                font-size: 1.2em;
+            }
+            .logo{
+                margin-left: 35%;
+                width: 30%;
+            }
+        }    
+        @media only screen and (min-width:775px){
+            .col-g-1{width: 8.33%;}
+            .col-g-2{width: 16.66%;}
+            .col-g-3{width: 25%;}
+            .col-g-4{width: 33.33%;}
+            .col-g-5{width: 41.66%;}
+            .col-g-6{width: 50%;}
+            .col-g-7{width: 58.33%;}
+            .col-g-8{width: 66.66%;}
+            .col-g-9{width: 75%;}
+            .col-g-10{width: 83.33%;}
+            .col-g-11{width: 91.66%;}
+            .col-g-5{width: 100%;}
+            .barra{
+                display: block;
+            }
+            .desplegable{
+                display: none;
+            }
+            .logo{
+                width: 30%;
+                height: auto;
+            }
+            .row{
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            .acce{
+                height: 530px;
+                padding: 20px 15px;
+                border-bottom: 1px solid black;
+                padding-top: 40px;
+            }
+            .acce img{
+                width: 100%;
+                height: 380px;
+            }
+            .barra a:active{
+                color:#742933;
+                background-color:white ;
+                padding: 10px;
+                border-bottom: 5px solid #b4a01d;
+                font-weight: bold;
+            }
+            p{
+                color: DarkOliveGreen;
+            }
+            .esp{
+                font-size: 2.5em;
+                letter-spacing: 10px;
+                border-bottom: 5px dotted black;
+            }
+            .logo{
+                margin-left: 35%;
+                width: 30%;
+            }
+        }
+        .row::after{
+            content: '';
+            display: table;
+            clear:both;
+          }
+        .sub{
+            margin-top: 30px;
+            margin-left: 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #492003;
+        }
+        footer nav a img {
+            width: 3%;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            float: right;
+            position: relative;
+            top: calc (150px - 50%);
+        }
+        h6{
+            text-align: left;
+            padding: 0px;
+        }
+        .acce div img{
+            padding: 3px;
+            border-radius: 5px;
+            background-color: #b4a01d8e;
+            width: 15%;
+            height: auto; 
+            right: 0px;
+            float: right;
+            display: flex;
+            position: relative;
+            bottom: 30px;
+            z-index: 1;
+        }
+        .acce div img:hover{
+            width: 50px;
+            height: auto;
+            box-shadow: 0px 0px 10px #cfc687;
+        }
+    </style>
+</head>
+<body>
+    <header class="col-12">
+        <nav>
+            <img src="img/LOGO.png" class="logo col-9">
+            <a href="#"><i class="far fa-star "></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="contactos.html"><i class="far fa-user"></i></a>
+            <a href="index.html"><i class="fas fa-home"></i></a>
+        </nav>
+        <div class="col-12 barra">
+            <a href="#An">Anillos</a>
+            <a href="#Ar">Aretes</a>
+            <a href="#Pu">Pulseras</a>
+            <a href="#Re">Reloj</a>
+            <a href="#Fa">Fajas</a>
+            <a href="#Pe">Perfumes</a>
+            <a href="#Ot">Otros</a>
+        </div>
+        <div class="col-12 desplegable">
+            <ul class="menu">
+                <li ><a href="#" >=</a>
+                    <ul>
+                        <li><a href="#An" >Anillos</a></li>
+                        <li><a href="#Ar" >Aretes</a></li>
+                        <li><a href="#Pu" >Pulseras</a></li>
+                        <li><a href="#Re">Reloj</a></li>
+                        <li><a href="#Fa" >Fajas</a></li>
+                        <li><a href="#Pe" >Perfumes</a></li>
+                        <li><a href="#Ot" >Otros</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span>Menú</span>
+        </div>
+    </header>
+    <div class="col'12 esp">
+        <h1>ACCESORIOS</h1>
+        Hombres y Mujeres
+    </div>
+    <a name="An"></a>
+    <div class="row">
+        <div class="col-12 sub"><h3>Anillos</h3></div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/ANILLO/img1.jpeg">
+            <i>Anillo Giro del destino</i>
+            <p>US$ 66.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/ANILLO/img2.jpeg">
+            <i>Anillo en plata ley </i>
+            <p>US$ 125.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/ANILLO/img3.jpeg">
+            <i>Anillo Corona Resplandor</i>
+            <p>US$ 159.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/ANILLO/img4.jpeg">
+            <i>Anillo Triple Alianza</i>
+            <p>US$ 110.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+    </div>
+    <a name="Ar"></a>
+    <div class="row">
+        <div class="col-12 sub"><h3>Aretes</h3></div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/ARITOS/img1.jpeg">
+            <i>Pendientes aro desmontable</i>
+            <p>US$ 39.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/ARITOS/img2.jpeg">
+            <i>Pendientes chandelier Lace</i>
+            <p>US$ 34.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/ARITOS/img3.jpeg">
+            <i>Arete Maisha Brillante De Plata</i>
+            <p>US$ 45.79</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/ARITOS/img4.jpg">
+            <i>Pendientes de perla</i>
+            <p>US$ 29.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+    </div>
+    <a name="Pu"></a>
+    <div class="row">
+        <div class="col-12 sub"><h3>Pulseras</h3></div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/PULSERAS/img1.jpg">
+            <i>Pulsera trenzada detalle acero</i>
+            <p>US$ 35.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/PULSERAS/img2.jpg">
+            <i>Pulsera eslabones combinados</i>
+            <p>US$ 24.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/PULSERAS/img3.jpg">
+            <i>Pulsera de plata trenzada</i>
+            <p>US$ 59.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/PULSERAS/img4.jpg">
+            <i>Pulsera multiple con piedra semipreciosa</i>
+            <p>US$ 29.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+    </div>
+    <a name="Re"></a>
+    <div class="row">
+        <div class="col-12 sub"><h3>Reloj</h3></div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/RELOJ/img1.jpg">
+            <i>Girard Perregaux</i>
+            <p>US$ 149.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/RELOJ/img2.jpg">
+            <i>Rolex de oro</i>
+            <p>US$ 175.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/RELOJ/img3.jpeg">
+            <i>Audemars Piguet</i>
+            <p>US$ 129.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/RELOJ/img4.jpeg">
+            <i>Frederique Constant FC-703VD3SD4</i>
+            <p>US$ 120.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+    </div>
+    <a name="Fa"></a>
+    <div class="colo-12 row">
+        <div class="col-12 sub"><h3>Fajas</h3></div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/FAJAS/img1.jpg">
+            <i>Cinturón rafia</i>
+            <p>US$ 29.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/FAJAS/img2.jpg">
+            <i>Cinturón fino hebilla</i>
+            <p>US$ 24.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/FAJAS/img3.jpg">
+            <i>Cinturón vestir reversible piel</i>
+            <p>US$ 39.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/FAJAS/img4.jpg">
+            <i>Cinturón piel dos tonos</i>
+            <p>US$ 32.50</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/FAJAS/img5.jpg">
+            <i>Cinturón piel serraje</i>
+            <p>US$ 39.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/FAJAS/img6.jpg">
+            <i>Cinturón hebilla metálica</i>
+            <p>US$ 29.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/FAJAS/img7.jpeg">
+            <i>Cinturón textura metalizado</i>
+            <p>US$ 29.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/FAJAS/img8.jpeg">
+            <i>Cinturón fajín entrelazado</i>
+            <p>US$ 29.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+    </div>
+    <a name="Pe"></a>
+    <div class="row">
+        <div class="col-12 sub"><h3>Perfumes</h3></div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/PERFUMES/img1.jpg">
+            <i>Eternity for Men</i>
+            <p>US$ 110.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/PERFUMES/img2.jpg">
+            <i>Pure Xs</i>
+            <p>US$ 69.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/PERFUMES/img3.jpg">
+            <i>Musa Dorada</i>
+            <p>US$ 92.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/PERFUMES/img4.jpg">
+            <i>Fragancia Genuina</i>
+            <p>US$ 85.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/PERFUMES/img5.jpg">
+            <i>Fragancias De la Donna</i>
+            <p>US$ 75.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/PERFUMES/img6.jpg">
+            <i>Milagro Floral</i>
+            <p>US$ 65.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/PERFUMES/img7.jpeg">
+            <i>Venus Radiante</i>
+            <p>US$ 79.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/PERFUMES/img8.jpeg">
+            <i>Spirit of the Brave</i>
+            <p>US$ 119.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+    </div>
+    <a name="Ot"></a>
+    <div class="row">
+        <div class="col-12 sub"><h3>Otros...</h3></div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/OTROS/img1.jpg">
+            <i>Gafas de sol montura metálica</i>
+            <p>US$ 19.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/OTROS/img2.jpg">
+            <i>Gafas de sol retro</i>
+            <p>US$ 32.50</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/OTROS/img3.jpg">
+            <i>Collar cadenas combinadas</i>
+            <p>US$ 24.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/OTROS/img4.jpg">
+            <i>Collar colgante geométrico con guitarra</i>
+            <p>US$ 55.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/OTROS/img5.jpg">
+            <i>Billetera efecto piel</i>
+            <p>US$ 19.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/OTROS/img6.jpg">
+            <i>Tarjetero combinado piel</i>
+            <p>US$ 12.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/OTROS/img7.jpg">
+            <i>Bolso baguette coco</i>
+            <p>US$ 24,99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/OTROS/img8.jpg">
+            <i>Mochila nylon multi bolsillos</i>
+            <p>US$ 89.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/OTROS/img9.jpg">
+            <i>Gorro paja cinta</i>
+            <p>US$ 24.99</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/OTROS/img10.jpg">
+            <i>Gorro crochet handmade con flores</i>
+            <p>US$ 39.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/OTROS/img11.jpg">
+            <i>Gorra baseball algodón</i>
+            <p>US$ 19.00</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+        <div class="col-12 col-m-6 col-g-3 acce">
+            <img src="imgac/ACCESORIOS/OTROS/img12.jpg">
+            <i>Tirante elástico detalle piel</i>
+            <p>US$ 32.50</p>
+            <div><a href="formulario_banco.html"><img src="img/carrito-de-compras.png"></a></div>
+        </div>
+    </div>
+    <footer style="background-color: #f5dab1; position: absolute; width: 100%; padding: 10px; color: rgb(90, 82, 82);">
+        <h4>Idioma: Español(Honduras)</h4>
+        <h5><img src="img/footer/telefono.png" style="width: 20px; float:left; padding-right: 3px;"> +504 9988-7766</h5>
+        <h5><img src="img/footer/email.png" style="width: 20px; float:left; padding-right: 3px;"> atencionalcliente@artemismoda.com</h5>
+        <nav>
+            <a href="#"><img src="img/footer/logo-de-facebook.png"></a>
+            <a href="#"><img src="img/footer/instagram.png"></a>
+            <a href="#"><img src="img/footer/gorjeo.png"></a>
+            <a href="#"><img src="img/footer/linkedin.png"></a>
+            <a href="#"><img src="img/footer/youtube.png"></a>
+        </nav>
+        <div class="col-12"></div>
+        <h6>ARTEMISA2021&COPY;Todos los Derechos Reservado</h6>
+    </footer>
+</body>
+</html>
